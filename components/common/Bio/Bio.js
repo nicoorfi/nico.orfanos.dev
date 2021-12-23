@@ -15,7 +15,7 @@ export function Bio({ className }) {
       />
 
       <p className="text-base leading-7">
-        <b className="text-3xl gloria-hallelujah">Nico Orfanos</b>
+        <b className="text-3xl">Nico Orfanos</b>
         <br></br>
         <a className="font-medium text-black align-baseline flex hover:no-underline hover:text-gray-700" href={`https://twitter.com/@nicoorfi`}>
 
