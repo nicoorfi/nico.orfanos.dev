@@ -1,0 +1,12 @@
+a:hover {
+  @apply underline;
+}
+
+span,
+p {
+  @apply font-light;
+}
+
+.gloria-hallelujah {
+font-family: 'Gloria Hallelujah', cursive;
+}

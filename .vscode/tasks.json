@@ -1,0 +1,20 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "new",
+            "type": "shell",
+            "command": "mkdir content/posts/${input:name} && cp post.template.md content/posts/${input:name}/${input:name}.md"
+        }
+    ],
+    "inputs": [
+        {
+            "id": "name",
+            "description": "Post name",
+            "default": "foo",
+            "type": "promptString"
+        },
+    ]
+}

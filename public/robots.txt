@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://blog.sigmie.com
+
+# Sitemaps
+Sitemap: https://blog.sigmie.com/sitemap.xml
