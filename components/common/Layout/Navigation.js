@@ -9,7 +9,7 @@ export default function Navigation() {
       <div className="max-w-5xl mx-auto px-2 sm:px-6 lg:px-8">
         <div className="relative flex items-center justify-between h-16">
           <div className="flex-1 flex justify-start">
-            <div className="flex items-center px-5">
+            <div className="flex items-center px-5 sm:px-2">
                 <Header></Header>
             </div>
           </div>
@@ -21,7 +21,7 @@ export default function Navigation() {
           <Link href={"/post/[slug]"} as={`/post/uses`}>
             <a className="text-black hover:no-underline hover:text-blue-500 block px-3 py-2 rounded-md text-base font-semibold">Uses</a>
           </Link>
-          <a href="https://app.sigmie.com" className="text-black hover:no-underline hover:text-blue-500 block px-3 py-2 rounded-md text-base font-semibold">Sigmie</a>
+          <a href="https://app.sigmie.com" target="_blank" className="text-black hover:no-underline hover:text-blue-500 block px-3 py-2 rounded-md text-base font-semibold">Sigmie</a>
               </div>
           </div>
 
@@ -47,6 +47,7 @@ export default function Navigation() {
           <Link href={"/post/[slug]"} as={`/post/uses`}>
             <a className="text-black hover:no-underline hover:text-blue-500 block px-3 py-2 rounded-md text-base font-semibold">Uses</a>
           </Link>
+          <a href="https://app.sigmie.com" target="_blank" className="text-black hover:no-underline hover:text-blue-500 block px-3 py-2 rounded-md text-base font-semibold">Sigmie</a>
         </div>
       </div>
 

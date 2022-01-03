@@ -17,31 +17,23 @@ export default function Home({ posts }) {
       </div>
 
       <div className="prose">
-Hi there, my name is Nico. I am a full-stack developer and entrepreneur currently living in Dortmund, Germany.
-<br></br>
-<br></br>
 
-I’m fascinated by Elasticsearch used as a search engine for building nice On-Site search experiences. I am writing about Elasticsearch on https://blog.sigmie.com, sharing all I know about it. 
-<br></br>
-<br></br>
+<p>Hi there, I’m Nico. I am a full-stack developer and entrepreneur currently living in Dortmund, Germany.</p>
 
-Right now I am bootstrapping https://app.sigmie.com and I share updates about my progress on Twitter.
-<br></br>
-<br></br>
+<p>I love using Elasticsearch as a search engine for building On-Site search experiences. I am writing about Elasticsearch on the  <a href="https://blog.sigmie.com">Sigmie Blog</a>, where I am sharing everything I know about it. </p>
 
-I spend my free time with my wife and my two boys. Sundays are football days, I play football myself with a nearby local team. And in the afternoons I watch football mostly “LaLiga” where I am fan of Barcelona.
+<p>Right now I am bootstrapping the <a href="https://app.sigmie.com">Sigmie Application</a>, which is Search Engine as a Service. You can find updates about my progress on <a href="hhttps://twitter.com/nicoorfi">Twitter</a>.</p>
 
-<br></br>
-<br></br>
+<p>I spend my free time with my wife and my two boys. On Sundays mornings, I play football at a local team, and in the afternoons I am watching football on TV. I am a big fan of FC Barcelona.</p>
 
-I also share my work on Twitter and here, where I am sharing daily challenges that I encounter during development and some personal thoughts and opinions on topics. 
+<p>Here and on <a href="hhttps://twitter.com/nicoorfi">Twitter</a> I am sharing my work, daily challenges and some of my thoughts and opinions. </p>
 
       </div>
       <SEO title="Nico Orfanos" />
       <h3 className="pb-5 pt-10 text-3xl font-bold">Latest Posts</h3>
       <ul className="divide-y divide-gray-300">
       {posts.slice(0, 5).map(({ frontmatter: { title, description, date, author }, slug }) => (
-      <li key={slug} className="px-4 py-4 sm:px-0">
+      <li key={slug} className="py-4 sm:px-0">
         <article>
           <header className="mb-2">
             <h3 className="mb-2">
