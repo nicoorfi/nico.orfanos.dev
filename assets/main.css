@@ -6,10 +6,25 @@
   @import "./base.css";
 
   a {
-    @apply text-theme-orange-light-900;
+    @apply text-theme-link;
   }
 }
 
 @layer components {
   @import "./components.css";
+}
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.gradiented {
+  @apply from-theme-from to-theme-to bg-gradient-to-r;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header {
+  font-family: 'Poppins', sans-serif;
 }
