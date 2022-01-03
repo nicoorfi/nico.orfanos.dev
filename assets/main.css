@@ -28,3 +28,7 @@ body {
 .header {
   font-family: 'Poppins', sans-serif;
 }
+
+p {
+  @apply font-normal;
+}

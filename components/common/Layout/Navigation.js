@@ -1,6 +1,4 @@
 import { useState } from "react";
-import Logo from './Logo';
-import LogoMobile from './LogoMobile';
 import { Header } from "@components/common";
 import Link from "next/link";
 
@@ -17,10 +15,13 @@ export default function Navigation() {
           </div>
           <div className="hidden sm:block sm:ml-6">
               <div className="flex space-x-4 px-5">
-          <a href="https://app.sigmie.com" className="text-black block px-3 py-2 rounded-md text-base font-semibold">Posts</a>
-          <Link href={"/post/[slug]"} as={`/post/uses`}>
-            <a href="https://docs.sigmie.com" className="text-black hover:no-underline hover:text-blue-500 block px-3 py-2 rounded-md text-base font-semibold">Uses</a>
+          <Link href={"/posts"} as={`/posts`}>
+            <a className="text-black hover:no-underline hover:text-blue-500 block px-3 py-2 rounded-md text-base font-semibold">Posts</a>
           </Link>
+          <Link href={"/post/[slug]"} as={`/post/uses`}>
+            <a className="text-black hover:no-underline hover:text-blue-500 block px-3 py-2 rounded-md text-base font-semibold">Uses</a>
+          </Link>
+          <a href="https://app.sigmie.com" className="text-black hover:no-underline hover:text-blue-500 block px-3 py-2 rounded-md text-base font-semibold">Sigmie</a>
               </div>
           </div>
 
@@ -40,9 +41,11 @@ export default function Navigation() {
 
       <div className={`sm:hidden ${open ? 'block' : 'hidden'}`}>
         <div className="px-5 pt-2 pb-3 space-y-1 bg-gray-50">
-          <a href="https://app.sigmie.com" target="_blank" className="text-black hover:no-underline hover:text-blue-500 block px-3 py-2 rounded-md text-base font-semibold">Posts</a>
+          <Link href={"/posts"} as={`/posts`}>
+            <a className="text-black hover:no-underline hover:text-blue-500 block px-3 py-2 rounded-md text-base font-semibold">Posts</a>
+          </Link>
           <Link href={"/post/[slug]"} as={`/post/uses`}>
-            <a href="https://docs.sigmie.com" className="text-black hover:no-underline hover:text-blue-500 block px-3 py-2 rounded-md text-base font-semibold">Uses</a>
+            <a className="text-black hover:no-underline hover:text-blue-500 block px-3 py-2 rounded-md text-base font-semibold">Uses</a>
           </Link>
         </div>
       </div>

@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { Layout, Bio, SEO, Image, Header } from "@components/common";
+import { Layout, Bio, SEO, Image, Header, Avatar } from "@components/common";
 import { getSortedPosts } from "@utils/posts";
 
 export default function Home({ posts }) {
@@ -10,9 +10,7 @@ export default function Home({ posts }) {
 <div className="max-w-screen-sm px-4 py-12 mx-auto antialiased text-semibold text-gray-800">
       <div className="flex flex-row items-center space-x-4 pb-10">
       <div className="block">
-        <div className="h-32 w-32 md:64 md:64 bg-gradient-to-r from-blue-400 to-green-300 rounded-full overflow-hidden shadow-lg">
-          <img src="https://avatars0.githubusercontent.com/u/15706832?s=460&u=e2262b5777aea47219f3f10ec55e5339ec40be3a&v=4" alt="James Brooks" class="h-32 w-32 flex-shrink-0 rounded-full p-2"></img>
-        </div>
+        <Avatar></Avatar>
       </div>
       <Header></Header>
 

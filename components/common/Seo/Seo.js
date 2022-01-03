@@ -1,36 +1,55 @@
 import Head from "next/head";
 
-import { getSiteMetaData } from "@utils/helpers";
+const injectGA = () => {
+  if (typeof window == 'undefined') {
+    return;
+  }
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    window.dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZHKVDMJD3S');
+};
 
 export function SEO({ title, description = "" }) {
-  const siteMetadata = getSiteMetaData();
-
-  const metaDescription = description || siteMetadata.description;
-
   return (
     <Head>
-      <title>
-        {title} | {siteMetadata.title}
-      </title>
-<link rel="preconnect" href="https://fonts.googleapis.com"></link>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true"></link>
-<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400&family=Poppins:wght@700&display=swap" rel="stylesheet"></link>
+      <link rel="preconnect" href="https://fonts.googleapis.com"></link>
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true"></link>
+      <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400&family=Poppins:wght@700&display=swap" rel="stylesheet"></link>
 
-      <meta name="description" content={metaDescription} />
-      <meta property="og:type" content="website" />
-      <meta name="og:title" property="og:title" content={title} />
-      <meta
-        name="og:description"
-        property="og:description"
-        content={metaDescription}
-      />
-      <meta name="twitter:card" content="summary" />
-      <meta name="twitter:title" content={title} />
-      <meta name="twitter:description" content={metaDescription} />
-      <meta name="twitter:creator" content={siteMetadata.social.twitter} />
-      <link rel="icon" type="image/png" href="/static/favicon.ico" />
-      <link rel="apple-touch-icon" href="/static/favicon.ico" />
-<link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet" />
+      <title>Nico Orfanos</title>
+      <meta name="title" content="Nico Orfanos"></meta>
+      <meta name="description" content="Software Developer living in Germany."></meta>
+
+      <meta property="og:type" content="website"></meta>
+      <meta property="og:url" content="https://nico.orfanos.dev/"></meta>
+      <meta property="og:title" content="Nico Orfanos"></meta>
+      <meta property="og:description" content="Software Developer living in Germany."></meta>
+      <meta property="og:image" content="/card.png"></meta>
+
+      <meta property="twitter:card" content="summary_large_image"></meta>
+      <meta property="twitter:url" content="https://nico.orfanos.dev/"></meta>
+      <meta property="twitter:title" content="Nico Orfanos"></meta>
+      <meta property="twitter:description" content="Software Developer living in Germany."></meta>
+      <meta property="twitter:image" content="/card.png"></meta>
+
+      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"></link>
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"></link>
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"></link>
+      <link rel="manifest" href="/site.webmanifest"></link>
+      <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"></link>
+      <meta name="msapplication-TileColor" content="#da532c"></meta>
+      <meta name="theme-color" content="#ffffff"></meta>
+
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-ZHKVDMJD3S"
+    />
+    <script>{injectGA()}</script>
+
     </Head>
   );
 }

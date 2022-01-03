@@ -1,15 +1,15 @@
 {
   "siteMetadata": {
-    "title": "Sigmie Blog",
+    "title": "",
     "author": {
       "name": "Nico Orfanos",
       "summary": "Trying to be a good developer."
     },
-    "description": "The Sigmie Blog for sharing our thoughts.",
-    "siteUrl": "https://blog.sigmie.com",
+    "description": "Software Developer living in Germany.",
+    "siteUrl": "https://nico.orfanos.dev",
     "language": "en-US",
     "social": {
-      "twitter": "nicoorfi"
+      "twitter": "@nicoorfi"
     }
   }
 }
