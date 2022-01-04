@@ -37,3 +37,7 @@ p {
 .prose a {
   @apply no-underline hover:no-underline text-blue-500 !important;
 }
+
+.prose pre {
+    background-color: #282a36;
+}
