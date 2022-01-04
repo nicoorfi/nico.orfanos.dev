@@ -1,7 +1,7 @@
 import Link from "next/link";
-import ReactMarkdown from "react-markdown/with-html";
+import ReactMarkdown from "react-markdown";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import style from "react-syntax-highlighter/dist/cjs/styles/prism/dracula";
+// import torchlight from 'remark-torchlight' 
 
 import { Layout, Image, SEO, Bio } from "@components/common";
 import { getPostBySlug, getPostsSlugs } from "@utils/posts";
@@ -26,9 +26,13 @@ export default function Post({ post, frontmatter, nextPost, previousPost }) {
 
         <ReactMarkdown
           className="mb-4 prose lg:prose-lg font-"
-          escapeHtml={false}
-          source={post.content}
-          renderers={{ code: CodeBlock, image: MarkdownImage }}
+          skipHtml={false}
+    //       remarkPlugins={[torchlight,{
+    // token: 'torch_ImyRgG5kK5xOpXpgqbMtq8ZrYDQLG18iVFlL4O85',
+    //             theme: 'material-theme-palenight'
+
+    //       }]}
+          children={post.content}
         />
         <hr className="mt-4" />
       </article>
@@ -84,18 +88,16 @@ export async function getStaticProps({ params: { slug } }) {
 
 const CodeBlock = ({ language, value }) => {
   return (
-    <SyntaxHighlighter style={style} language={language}>
+    <SyntaxHighlighter language={language}>
       {value}
     </SyntaxHighlighter>
   );
 };
 
 const MarkdownImage = ({ alt, src }) => (
-  <Image
+  <img
     alt={alt}
-    src={require(`../../content/assets/${src}`)}
-    webpSrc={require(`../../content/assets/${src}?webp`)}
-    previewSrc={require(`../../content/assets/${src}?lqip`)}
+    src={`../../content/assets/${src}`}
     className="w-full"
   />
 );

@@ -41,11 +41,11 @@ module.exports = {
     highlight: {
         // Directory where your un-highlighted source files live. If
         // left blank, Torchlight will use the current directory.
-        input: '',
+        input: 'out',
 
         // Directory where your highlighted files should be placed. If
         // left blank, files will be modified in place.
-        output: '',
+        output: 'out',
 
         // Globs to include when looking for files to highlight.
         includeGlobs: [

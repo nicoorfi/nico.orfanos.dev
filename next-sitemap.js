@@ -1,4 +1,4 @@
 module.exports = {
-  siteUrl: 'https://blog.sigmie.com',
+  siteUrl: 'https://nico.orfanos.dev',
   generateRobotsTxt: true,
 }

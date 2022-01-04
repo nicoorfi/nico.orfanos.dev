@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://blog.sigmie.com
+Host: https://nico.orfanos.dev
 
 # Sitemaps
-Sitemap: https://blog.sigmie.com/sitemap.xml
+Sitemap: https://nico.orfanos.dev/sitemap.xml
