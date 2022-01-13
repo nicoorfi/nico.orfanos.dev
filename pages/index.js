@@ -22,11 +22,11 @@ export default function Home({ posts }) {
 
 <p>I love using Elasticsearch as a search engine for building On-Site search experiences. I am writing about Elasticsearch on the  <a href="https://blog.sigmie.com">Sigmie Blog</a>, where I am sharing everything I know about it. </p>
 
-<p>Right now I am bootstrapping the <a href="https://app.sigmie.com">Sigmie Application</a>, which is Search Engine as a Service. You can find updates about my progress on <a href="hhttps://twitter.com/nicoorfi">Twitter</a>.</p>
+<p>Right now I am bootstrapping the <a href="https://app.sigmie.com">Sigmie Application</a>, which is Search Engine as a Service. You can find updates about my progress on <a href="https://twitter.com/nicoorfi">Twitter</a>.</p>
 
-<p>I spend my free time with my wife and my two boys. On Sundays mornings, I play football at a local team, and in the afternoons I am watching football on TV. I am a big fan of FC Barcelona.</p>
+<p>In my free time, besides helping my wife to raise our two boys, I enjoy watching Netflix and playing football.</p>
 
-<p>Here and on <a href="hhttps://twitter.com/nicoorfi">Twitter</a> I am sharing my work, daily challenges and some of my thoughts and opinions. </p>
+<p>Here and on <a href="https://twitter.com/nicoorfi">Twitter</a> I am sharing my work, daily challenges and some of my thoughts and opinions. </p>
 
       </div>
       <SEO title="Nico Orfanos" />
