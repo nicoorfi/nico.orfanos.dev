@@ -19,7 +19,7 @@ This is simple to fix in this case, but it can be more complex in other cases an
 ## How to implement write transactions in Laravel
 Database transactions are good practice for all **write** actions. Therefore we create a global middleware for this, using the following command. 
 ```bash
-$ php artisan create:middleware DatabaseTransaction
+$ php artisan make:middleware DatabaseTransaction
 ```
 
 and we change the `handle` method like below:
