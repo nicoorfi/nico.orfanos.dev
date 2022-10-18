@@ -5,6 +5,7 @@ import { useRouter } from "next/router";
 import { DarkModeSwitch } from "react-toggle-dark-mode";
 import { useTheme } from "next-themes";
 import Navigation from "./Navigation";
+import Newsletter from "./Newsletter";
 
 export function Layout({ children }) {
   return (
@@ -18,7 +19,7 @@ export function Layout({ children }) {
         <Header />
         <main>{children}</main>
         <footer className="text-lg">
-          {/* © {new Date().getFullYear()} */}
+          {/* <Newsletter /> */}
         </footer>
       </div>
     </div>

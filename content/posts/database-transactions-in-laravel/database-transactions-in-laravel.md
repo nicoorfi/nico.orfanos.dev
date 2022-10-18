@@ -79,7 +79,7 @@ So if you also are sending an email after the user creation, your code should lo
 
 ```php
 $user = User::create(['email'=> 'john@gmai.com');
-
+    
 $user->teams()->attach($team->id);
 
 dispatch(new SendWelcomeEmail($user))->afterCommit();

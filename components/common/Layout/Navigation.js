@@ -21,6 +21,7 @@ export default function Navigation() {
           <Link href={"/post/[slug]"} as={`/post/uses`}>
             <a className="text-black hover:no-underline hover:text-blue-500 block px-3 py-2 rounded-md text-base font-semibold">Uses</a>
           </Link>
+          <a href="https://www.getrevue.co/profile/nicoorfi" target="_blank" className="text-black hover:no-underline hover:text-blue-500 block px-3 py-2 rounded-md text-base font-semibold">Newsletter</a>
           <a href="https://app.sigmie.com" target="_blank" className="text-black hover:no-underline hover:text-blue-500 block px-3 py-2 rounded-md text-base font-semibold">Sigmie</a>
               </div>
           </div>
