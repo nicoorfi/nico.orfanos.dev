@@ -18,14 +18,19 @@ export function Bio({ className }) {
         By &nbsp;
         <b className="text-lg">Nico Orfanos</b>
         <br></br>
-        Full-Stack developer and Elasticsearch enthusiast.
+        <div className="flex flex-row">
+          <span>Full-Stack developer and creator of </span>&nbsp;
+          <a className="font-medium text-black align-baseline flex hover:no-underline hover:text-gray-700" href={`https://app.sigmie.com`}>app.sigmie.com</a>
+          <span>.</span>
+        </div>
+
         <a className="font-medium text-black align-baseline flex hover:no-underline hover:text-gray-700" href={`https://twitter.com/@nicoorfi`}>
 
-<span className="font-medium">
+          <span className="font-medium">
             Find me on&nbsp;<a className="text-gray-800 underline" target="_blank" href="https://twitter.com/nicoorfi">Twitter</a>&nbsp;or&nbsp;<a className="text-gray-800 underline" target="_blank" href="https://github.com/nicoorfi">Github</a>.
-</span>
+          </span>
         </a>
-      </p>
-    </div>
+      </p >
+    </div >
   );
 }
