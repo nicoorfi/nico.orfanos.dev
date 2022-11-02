@@ -6,10 +6,10 @@ import { getSortedPosts } from "@utils/posts";
 export default function Home({ posts }) {
   return (
     <Layout>
-      <SEO title="Nico Orfanos | Blog Posts" />
+      <SEO title="Nico Orfanos | Blog Posts" image="/cards/all-posts.png" />
       <h3 className="pb-5 pt-10 text-3xl font-bold">All Posts</h3>
       <ul className="divide-y divide-gray-300">
-      {posts.map(({ frontmatter: { title, description, date, author }, slug }) => (
+      {posts.map(({ frontmatter: { title, description, date, author, image }, slug }) => (
       <li key={slug} className="px-4 py-4 sm:px-0">
         <article>
           <header className="mb-2">

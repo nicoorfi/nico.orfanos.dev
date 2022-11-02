@@ -12,6 +12,7 @@ export default function Post({ post, frontmatter, nextPost, previousPost }) {
       <SEO
         title={frontmatter.title}
         description={frontmatter.description || post.excerpt}
+        image={frontmatter.image}
       />
 
       <article>
@@ -20,9 +21,14 @@ export default function Post({ post, frontmatter, nextPost, previousPost }) {
             <h1 className="mb-2 text-5xl font-bold leading-none">
               {frontmatter.title}
             </h1>
+            <div className="flex flex-col space-y-5">
+            <span className="text-md font-semibold text-gray-500">{frontmatter.description}</span>
             <span className="text-sm font-semibold text-gray-500">{frontmatter.date}</span>
+            </div>
           </header>
         </div>
+        <img className="rounded space-bottom-xl shadow-xl space-top-xl mb-10" src={`/${frontmatter.image}`}></img>
+
 
         <ReactMarkdown
           className="mb-4 prose lg:prose-lg font-"

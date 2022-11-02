@@ -27,7 +27,7 @@ export default function Home({ posts }) {
           <p>Here and on <a href="https://twitter.com/nicoorfi">Twitter</a> and in my <a href="https://www.getrevue.co/profile/nicoorfi">Newsletter</a> I am sharing my work, daily challenges and some of my thoughts and opinions. </p>
 
         </div>
-        <SEO title="Nico Orfanos" />
+        <SEO title="Nico Orfanos | Latest Posts" image="cards/latest-posts.png" />
         <h3 className="pb-5 pt-10 text-3xl font-bold">Latest Posts</h3>
         <ul className="divide-y divide-gray-300">
           {posts.slice(0, 5).map(({ frontmatter: { title, description, date, author }, slug }) => (

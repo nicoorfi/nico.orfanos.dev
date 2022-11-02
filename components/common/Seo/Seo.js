@@ -13,7 +13,7 @@ const injectGA = () => {
   gtag('config', 'G-ZHKVDMJD3S');
 };
 
-export function SEO({ title, description = "" }) {
+export function SEO({ title, description = "", image = "" }) {
   return (
     <Head>
       <link rel="preconnect" href="https://fonts.googleapis.com"></link>
@@ -28,13 +28,13 @@ export function SEO({ title, description = "" }) {
       <meta property="og:url" content="https://nico.orfanos.dev/"></meta>
       <meta property="og:title" content="Nico Orfanos"></meta>
       <meta property="og:description" content="Software Developer living in Germany."></meta>
-      <meta property="og:image" content="/card.png"></meta>
+      <meta property="og:image" content={`https://nico.orfanos.dev/${image}`}></meta>
 
       <meta property="twitter:card" content="summary_large_image"></meta>
       <meta property="twitter:url" content="https://nico.orfanos.dev/"></meta>
       <meta property="twitter:title" content="Nico Orfanos"></meta>
       <meta property="twitter:description" content="Software Developer living in Germany."></meta>
-      <meta property="twitter:image" content="/card.png"></meta>
+      <meta property="twitter:image" content={`https://nico.orfanos.dev/${image}`}></meta>
 
       <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"></link>
       <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"></link>

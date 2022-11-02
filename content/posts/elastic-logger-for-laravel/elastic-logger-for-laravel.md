@@ -2,6 +2,7 @@
 title: Elastic logger for Laravel
 description: Log from your Laravel app into Elastic Cloud from all your environments.
 date: 2022-10-21T00:00:00.000Z
+image: 'cards/elastic-logger-for-laravel.png'
 ---
 
 A thing in all my projects is using Elastic cloud for my application logging.

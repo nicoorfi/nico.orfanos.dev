@@ -87,4 +87,4 @@ dispatch(new SendWelcomeEmail($user))->afterCommit();
 
 ## Final words
 
-The accuracy, completeness, and reliability of your database data are viable things for your application. Using database transactions in Laravel is easy for us to take advantage of them. 
+The accuracy, completeness, and reliability of your database data are viable things for your application. Using database transactions in Laravel is easy for us to take advantage of them.
