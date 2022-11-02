@@ -2,6 +2,7 @@
 title: For two years I had no idea what I was building
 description: I was building a daily I product which I had no idea what it should look like at the end. But I kept going and I learned a lesson.
 date: 2022-01-03T00:00:00.000Z
+image: 'cards/for-two-years-i-had-no-idea-what-i-was-building.png'
 ---
 
 I was building a daily I product which I had no idea what it should look like at the end. But I kept going and I learned a lesson.

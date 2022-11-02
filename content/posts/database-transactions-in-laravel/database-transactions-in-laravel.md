@@ -2,6 +2,7 @@
 title: Using database transactions for write operations
 description: Using database transactions can give you database integrity, and it’s a good practice to use them for your write operations. Let’s see why and how you can use them in your Laravel application. 
 date: 2022-01-18T00:00:00.000Z
+image: 'cards/using-database-transactions-for-write-operations.png'
 ---
 
 ## Why transactions are a good thing.

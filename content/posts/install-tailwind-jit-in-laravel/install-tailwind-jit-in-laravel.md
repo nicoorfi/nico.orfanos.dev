@@ -2,6 +2,7 @@
 title: Install Tailwind's JIT compiler into Laravel
 description: How to install Tailwind's JIT with Laravel mix.
 date: 2021-08-21T00:00:00.000Z
+image: 'cards/install-tailwind-jit-compiler-into-laravel.png'
 ---
 
 ## Introduction

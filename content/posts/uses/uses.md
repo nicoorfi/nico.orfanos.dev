@@ -2,6 +2,7 @@
 title: What I use 
 description: Inspired by many others I listed the software tools that I use, and also how I use them.
 date: 2022-01-05T00:00:00.000Z
+image: 'cards/what-i-use.png'
 ---
 
 Inspired by many others I listed the software tools that I use, and also how I use them.

@@ -2,6 +2,7 @@
 title: 3-Way Relationships with Laravel Nova
 description: Displaying the contents of the intermediate pivot Table Model in Laravel Nova.
 date: 2021-03-12T00:00:00.000Z
+image: 'cards/3-way-relationships-with-laravel-nova.png'
 ---
 
  In some cases you may have a 3-Way **Pivot** table where you wan't to display only the related 

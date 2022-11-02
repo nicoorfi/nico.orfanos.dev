@@ -1,7 +1,8 @@
 ---
-title: Docker composer custom DNS 
+title: Docker compose custom DNS
 description: How to use custom DNS in your Docker compose setup.
 date: 2021-02-05T00:00:00.000Z
+image: 'cards/docker-compose-custom-dns.png'
 ---
 
 Recenly spend some hours debugging a strange behavior happening only on my local development environment for my Laravel application.
