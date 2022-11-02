@@ -22,18 +22,18 @@ export function SEO({ title, description = "", image = "" }) {
 
       <title>Nico Orfanos</title>
       <meta name="title" content="Nico Orfanos"></meta>
-      <meta name="description" content="Software Developer living in Germany."></meta>
+      <meta name="description" content="Software Developer living in Greece."></meta>
 
       <meta property="og:type" content="website"></meta>
       <meta property="og:url" content="https://nico.orfanos.dev/"></meta>
       <meta property="og:title" content="Nico Orfanos"></meta>
-      <meta property="og:description" content="Software Developer living in Germany."></meta>
+      <meta property="og:description" content="Software Developer living in Greece."></meta>
       <meta property="og:image" content={`https://nico.orfanos.dev/${image}`}></meta>
 
       <meta property="twitter:card" content="summary_large_image"></meta>
       <meta property="twitter:url" content="https://nico.orfanos.dev/"></meta>
       <meta property="twitter:title" content="Nico Orfanos"></meta>
-      <meta property="twitter:description" content="Software Developer living in Germany."></meta>
+      <meta property="twitter:description" content="Software Developer living in Greece."></meta>
       <meta property="twitter:image" content={`https://nico.orfanos.dev/${image}`}></meta>
 
       <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"></link>

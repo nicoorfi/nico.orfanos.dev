@@ -18,7 +18,7 @@ export default function Home({ posts }) {
 
         <div className="prose">
 
-          <p>Hi there, I’m Nico. I am a full-stack developer and entrepreneur currently living in Dortmund, Germany.</p>
+          <p>Hi there, I’m Nico. I am a full-stack developer and entrepreneur currently living in Thessaloniki, Greece.</p>
 
           <p>I love using Elasticsearch as a search engine for building On-Site search experiences. I am writing about Elasticsearch on the  <a href="https://blog.sigmie.com">Sigmie Blog</a>, where I am sharing everything I know about it. </p>
 
